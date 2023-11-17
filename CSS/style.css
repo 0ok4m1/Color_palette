@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #010326 80%, #270140, #55038C );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+h1 {
+    color: #9904D9;
+    width: 81.25rem;
+    margin: auto;
+    text-align: center;
+    text-transform:inherit;
+    border: 2px solid;
+    border-radius: 12px;
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px #55038C;
+    padding: 1rem;
+}
+
+.imagens {
+    height: 50vh;
+    overflow: hidden;
+    margin: 5px;
+    width: auto;
+}
+
+.image_slide {
+    height: 100%;
+    width: calc(31vw * 8);
+    display: flex;
+    gap: 2rem;
+    animation: slide 15s linear infinite;
+}
+
+img {
+    width: 33vw;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc( (-33vw - 2rem) * 4));
+    }
+}
+
+h2 {
+    color: #55038C;
+    text-align: center;
+    width: 68.75rem;
+    margin: auto;
+    font-size: 60px;
+    border: 4px solid;
+    border-radius: 12px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px #270140;
+    padding: 1rem;
+}
+
+.intro {
+    color: #55038C;
+    text-align: center;
+    width: 37.5rem;
+    margin: auto;
+    font-size: 3rem;
+    border: 4px solid;
+    border-radius: 12px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px #270140;
+    padding: 1rem;
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 60px;
+    text-indent: 20px;
+    font-family: 'VT323', monospace;
+    margin: 2rem;
+}
+
+.img2 {
+    width: 62.5rem;
+    display: block;
+    margin: auto;
+}
+
+
+@media (max-width: 1920px) {
+    h1 {
+        width: 40.625rem;
+        font-size: 30px;
+    }
+
+    .intro {
+        width: 18.75rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    h2 {
+        width: 34.375rem;
+        font-size: 30px;
+    }
+
+    .img2 {
+        width: 43.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        width: 28.125rem;
+    }
+
+    .img2 {
+        width: 31.25rem;
+    }    
+}
+
+@media (max-width: 668px) {
+    h2 {
+        width: 21.875rem;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 528px) {
+    h1 {
+        width: 25rem;
+        font-size: 15px;
+    }
+
+    .img2 {
+        width: 21.875rem;
+    }
+}
+
+@media (max-width: 428px) {
+    h1 {
+        width: 18.75rem;
+    }
+
+    h2 {
+        width: 16.875rem;
+    }
+}
